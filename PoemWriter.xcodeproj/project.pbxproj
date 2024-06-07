@@ -72,12 +72,12 @@
 		FAF55B312C1325B4003EE6D8 /* PoemWriter */ = {
 			isa = PBXGroup;
 			children = (
-				FAA707582C132CF70092122E /* Info.plist */,
 				FAF55B322C1325B4003EE6D8 /* PoemWriterApp.swift */,
 				FAF55B342C1325B4003EE6D8 /* ContentView.swift */,
 				FAA707532C132A5A0092122E /* LLMManager.swift */,
 				FAA7075D2C13459D0092122E /* Views */,
 				FAF55B362C1325B5003EE6D8 /* Assets.xcassets */,
+				FAA707582C132CF70092122E /* Info.plist */,
 				FAF55B3B2C1325B5003EE6D8 /* PoemWriter.entitlements */,
 				FAF55B382C1325B5003EE6D8 /* Preview Content */,
 			);

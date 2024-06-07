@@ -46,6 +46,9 @@ struct ContentView: View {
                 .padding(.horizontal, 20)
                 .animation(.easeInOut, value: userInput)
             }
+            .onTapGesture {
+                isInputFocused = false // Dismiss the keyboard when tapping outside
+            }
         }
     }
     
