@@ -1,9 +1,9 @@
-# PoemWriter: Personalized Poetry, Anytime, Any Topic
+# Poem Generator: Personalized poetry, anytime, any topic!
 
-PoemWriter is a simple demonstration of the LLM completions API. The user enters a poem topic and the LLM generates a full poem about the topic. 
+PoemGenerator is a simple demonstration of the LLM completions API. The user enters a poem topic and the LLM generates a full poem about the topic. 
 
 ## Installation
-To install and run PoemWriter:
+To install and run PoemGenerator:
 1. Download and open the project
 2. Add your OpenAI API Key in the `LLMManager` file:
 
