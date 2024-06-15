@@ -94,7 +94,7 @@ static let client = OpenAI.Client(apiKey: "YOUR_API_KEY")
 ```
 3. Specify the LLM Model
 ```swift
-static let model: OpenAI.Model = .gpt_4 // .gpt_4o, .gpt_3_5
+static let model: OpenAI.Model = .gpt_4o // .gpt_4, .gpt_3_5
 
 // multiple model options for other clients available
 //    static let model: Anthropic.Model = .haiku
