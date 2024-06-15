@@ -8,6 +8,12 @@ PoemGenerator is a simple demonstration of the LLM completions API. The user ent
 <br/><br/>
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/PreternaturalAI/AI/blob/main/LICENSE)
 
+## Table of Contents
+- [Usage](#usage)
+- [Key Concepts](#key-concepts)
+- [Preternatural Frameworks](#preternatural-frameworks)
+- [License](#license)
+
 ## Usage
 #### Supported Platforms
 <!-- macOS-->
@@ -47,11 +53,6 @@ static let client = OpenAI.Client(apiKey: "YOUR_API_KEY")
 
 <img width="688" alt="poemwriterscreenshot" src="https://github.com/preternatural-explore/PoemWriter/assets/1157147/9e7f96ab-33f1-43bd-8903-94f55adacf31">
 
-## Table of Contents
-- [Key Concepts](#key-concepts)
-- [Preternatural Frameworks](#preternatural-frameworks)
-- [License](#license)
-
 ## Key Concepts
 This app is an introduction to working with LLM completions API. See `LLMManager` for the LLM logic to generate the poem. 
 
@@ -60,7 +61,7 @@ The following Preternatural Frameworks were used in this project:
 - [AI](https://github.com/PreternaturalAI/AI): The definitive, open-source Swift framework for interfacing with generative AI.
 - [SwiftUIZ](https://github.com/SwiftUIX/SwiftUIZ): A framework to support ambitious expansions to SwiftUI.
 
-# License
+## License
 
 This package is licensed under the [MIT License](https://github.com/PreternaturalAI/AI/blob/main/LICENSE).
 
