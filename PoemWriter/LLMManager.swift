@@ -11,7 +11,7 @@ import OpenAI
 struct LLMManager {
     static let client = OpenAI.Client(apiKey: "YOUR_API_KEY")
     
-    static let model: OpenAI.Model = .gpt_4
+    static let model: OpenAI.Model = .gpt_4o
     
     static let systemPrompt: PromptLiteral = """
     Write a poem for adults that blends a sophisticated tone with elements of humor and creativity. The poem should appeal to an adult audience by exploring themes relevant to daily life, personal growth, or philosophical reflections, but with a light-hearted and engaging twist. Use vivid imagery and clever wordplay to create an immersive and entertaining experience. The poem should be structured with a clear rhythm and, optionally, rhyme, reflecting traditional poetic forms while infusing modern, relatable content.
