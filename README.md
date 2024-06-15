@@ -74,6 +74,7 @@ To make a completion request to OpenAI's LLM model, we need to "complete" a few 
 
 1. Import the AI Framework along with the LLM Client you plan to use:
 ```swift
+// LLMManager
 import AI
 import OpenAI
 
@@ -81,7 +82,6 @@ import OpenAI
 //import Anthropic
 //import Mistral
 //import Groq
-
 ```
 2. Specify the LLM client (in our case, OpenAI, but you can replace this for Anthropic / Mistral / Groq / etc):
 ```swift
