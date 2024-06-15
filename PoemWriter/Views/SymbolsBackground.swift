@@ -13,7 +13,7 @@ struct SymbolsBackground: View {
         "text.book.closed", "character.book.closed.fill", "signature",
         "scribble", "quote.bubble", "paintpalette"
     ]
-    private let colors = [Color.pink, Color.purple, Color.green, Color.orange, Color.blue]
+    private let colors: [Color] = [.pink, .purple, .green, .orange, .blue]
     
     #if os(iOS)
     private let screenBounds = UIScreen.main.bounds  // Using screen bounds for positioning

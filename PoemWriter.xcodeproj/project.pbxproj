@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA52B4372C1D7423003B599A /* SwiftUIZ in Frameworks */ = {isa = PBXBuildFile; productRef = FA52B4362C1D7423003B599A /* SwiftUIZ */; };
 		FA56E8FE2C1345D600696E3C /* SymbolsBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56E8FD2C1345D600696E3C /* SymbolsBackground.swift */; };
 		FAA707522C132A400092122E /* AI in Frameworks */ = {isa = PBXBuildFile; productRef = FAA707512C132A400092122E /* AI */; };
 		FAA707542C132A5A0092122E /* LLMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA707532C132A5A0092122E /* LLMManager.swift */; };
-		FAA707572C132BE80092122E /* SwiftUIZ in Frameworks */ = {isa = PBXBuildFile; productRef = FAA707562C132BE80092122E /* SwiftUIZ */; };
 		FAA7075C2C1345220092122E /* PoemDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA7075B2C1345220092122E /* PoemDisplayView.swift */; };
 		FAF55B332C1325B4003EE6D8 /* PoemWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF55B322C1325B4003EE6D8 /* PoemWriterApp.swift */; };
 		FAF55B352C1325B4003EE6D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF55B342C1325B4003EE6D8 /* ContentView.swift */; };
@@ -37,7 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA707522C132A400092122E /* AI in Frameworks */,
-				FAA707572C132BE80092122E /* SwiftUIZ in Frameworks */,
+				FA52B4372C1D7423003B599A /* SwiftUIZ in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 			name = PoemWriter;
 			packageProductDependencies = (
 				FAA707512C132A400092122E /* AI */,
-				FAA707562C132BE80092122E /* SwiftUIZ */,
+				FA52B4362C1D7423003B599A /* SwiftUIZ */,
 			);
 			productName = PoemWriter;
 			productReference = FAF55B2F2C1325B4003EE6D8 /* PoemWriter.app */;
@@ -142,7 +142,7 @@
 			mainGroup = FAF55B262C1325B4003EE6D8;
 			packageReferences = (
 				FAA707502C132A400092122E /* XCRemoteSwiftPackageReference "AI" */,
-				FAA707552C132BE80092122E /* XCRemoteSwiftPackageReference "SwiftUIZ" */,
+				FA52B4352C1D7423003B599A /* XCRemoteSwiftPackageReference "SwiftUIZ" */,
 			);
 			productRefGroup = FAF55B302C1325B4003EE6D8 /* Products */;
 			projectDirPath = "";
@@ -391,6 +391,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FA52B4352C1D7423003B599A /* XCRemoteSwiftPackageReference "SwiftUIZ" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIZ";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		FAA707502C132A400092122E /* XCRemoteSwiftPackageReference "AI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PreternaturalAI/AI";
@@ -399,26 +407,18 @@
 				kind = branch;
 			};
 		};
-		FAA707552C132BE80092122E /* XCRemoteSwiftPackageReference "SwiftUIZ" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftUIX/SwiftUIZ";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA52B4362C1D7423003B599A /* SwiftUIZ */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA52B4352C1D7423003B599A /* XCRemoteSwiftPackageReference "SwiftUIZ" */;
+			productName = SwiftUIZ;
+		};
 		FAA707512C132A400092122E /* AI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FAA707502C132A400092122E /* XCRemoteSwiftPackageReference "AI" */;
 			productName = AI;
-		};
-		FAA707562C132BE80092122E /* SwiftUIZ */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FAA707552C132BE80092122E /* XCRemoteSwiftPackageReference "SwiftUIZ" */;
-			productName = SwiftUIZ;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
