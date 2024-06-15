@@ -69,7 +69,7 @@ However, the LLM’s standalone completion functionality by itself was not found
 
 Knowing this is important for us, as developers. Because while on the surface most of consumers think of LLMs as “Chat”, they are still completion machines under the hood. They are simply completing the input they receive based on probabilities. The PoemGenerator is a demonstration of this concept. In the PoemGenerator, the user never directly "chats" with OpenAI's GPT model. They simple put in a poem title, and the LLM model completes the poem. 
 
-### Technical Implementation
+### Implementation
 To make a completion request to OpenAI's LLM model, we need to "complete" a few steps using [Preternatural's AI framework](https://github.com/PreternaturalAI/AI): 
 
 1. Import the AI Framework along with the LLM Client you plan to use:
