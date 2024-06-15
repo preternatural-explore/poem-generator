@@ -6,6 +6,7 @@
 //
 
 import AI
+import OpenAI
 
 struct LLMManager {
     static let client = OpenAI.Client(apiKey: "YOUR_API_KEY")
@@ -30,8 +31,8 @@ struct LLMManager {
     - Avoid using overly complex language; keep it accessible yet thoughtful.
     """
     
-    static func writeAPoemAbout(_ text: String) async -> String? {
-        let userPrompt: PromptLiteral = "write a poem about \(text)"
+    static func writeAPoemAbout(_ topic: String) async -> String? {
+        let userPrompt: PromptLiteral = "write a poem about \(topic)"
         
         let messages: [AbstractLLM.ChatMessage] = [
             .system(systemPrompt),
@@ -39,14 +40,13 @@ struct LLMManager {
         ]
         
         do {
-            
-            let result: String = try await client.complete(
+            let poem: String = try await client.complete(
                 messages,
                 parameters: nil,
                 model: model,
                 as: .string)
             
-            return result
+            return poem
         } catch {
             print(error)
         }
