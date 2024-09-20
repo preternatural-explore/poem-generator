@@ -48,7 +48,8 @@ struct LLMManager {
             
             return poem
         } catch {
-            print(error)
+            print("ERROR: \(String(describing: error))")
+            return nil
         }
         
         return nil
